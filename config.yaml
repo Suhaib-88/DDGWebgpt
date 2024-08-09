@@ -1,4 +1,4 @@
-gpt_model: llama-3b-versatile
+gpt_model: command-r
 temperature: 0
 llm_function_caller_system_role:
   "As a chatbot, your goal is to respond to the user's question respectfully and concisely.\
