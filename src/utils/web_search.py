@@ -1,6 +1,7 @@
 from duckduckgo_search import DDGS
 # The DDGS and AsyncDDGS classes are used to retrieve search results from DuckDuckGo.com.
 from typing import List, Optional
+# from langchain_core.staticmethods import staticmethod
 import logging 
 
 
@@ -39,7 +40,6 @@ class WebSearch:
         with DDGS() as ddgs:
             results = [r for r in ddgs.text(
                 query, region='wt-wt', safesearch='off', timelimit='y', max_results=max_results)]
-            print(f"Results for query '{query}': {results}")
         return results
 
     @staticmethod
